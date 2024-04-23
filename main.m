@@ -56,7 +56,7 @@ for v = 1:length(noise_variances)
     noisy_data = max(min(noisy_data, 1), 0);
     noisy_datasets{v} = noisy_data;
 end
-label=[ones(100,1);ones(100,1)*2;ones(100,1)*3;ones(100,1)*4;ones(100,1)*5];
+L_true=[ones(100,1);ones(100,1)*2;ones(100,1)*3;ones(100,1)*4;ones(100,1)*5];
 % Now 'synthetic_data' is the original dataset, and 'noisy_datasets' contain seven additional datasets with Gaussian noise.
 %%
 
